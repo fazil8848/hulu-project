@@ -1,0 +1,743 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Rubik:wght@300;400;600;700&display=swap');
+
+  html,body{
+    font-family: 'Rubik', sans-serif;
+    background:#0b0c0f;
+    color: #fff;
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  a{
+    color: #fff;
+    text-decoration: none;
+  }
+  a :hover{
+    color: grey;
+  }
+
+  ul{
+
+    list-style-type: none;
+  }
+
+  img{
+    width: 100%;
+
+  }
+
+  h4{
+    text-transform: uppercase;
+    color: #1CE783;
+    font-size: 14px;
+  }
+  
+  h3{
+    font-size: 22px;
+    font-weight: 300;
+  }
+
+  .buttons{
+
+    display: inline-block;
+    background:#1CE783;
+    color: #000;
+    min-width: 130px;
+    padding: 20px 32px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 0;
+    line-height: 14px;
+    cursor: pointer;
+  }
+
+  .buttons-cta{
+     width: 600px;
+  }
+
+  .buttons-cta:hover{
+   
+    opacity: 0.5;
+  }
+
+.legal-text{
+    cursor: pointer;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    padding: 20px;
+    
+  }
+  .Terms-app{
+    display: block;
+    color: #ccc;
+    font-size: 12px;
+    margin-top: 5px;
+    text-decoration: underline;
+    padding-left: 150px;
+  }
+
+  .text-xl{
+
+    font-size: 50px;
+    font-weight: bold;
+    
+  }
+  .sub-text{
+
+    max-width: 850;
+    margin-bottom: 10px;
+    font-size: 24px;
+
+  }
+
+  /*Header*/
+  .header{
+    height: 650px;
+    background: url(../Hulu/images/header.jpg) 
+    no-repeat center center / cover ;
+
+  }
+
+  .header .secction-1-gradient{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: linear-gradient
+    (179.81deg, rgba(4,4,4,0.7) .17%,
+     rgba(4,4,4,0.45) 85.02%,
+      rgba(4,4,4,0.3) 112.52%) ! important;
+
+
+  }
+
+  .header nav{
+    display: flex;
+    float: right;
+    padding: 20px 40px;
+  }
+
+  .header nav .log-in-button{
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+  }
+  
+  .logo{
+    width: 370px;
+    margin: 10px 0px;
+  }
+
+  .header .header-contents{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 35px;
+
+  }
+
+  .header .header-line-1{
+
+    font-size: 24px;
+    font-weight: bold;
+    margin: 23px 0px;
+
+  }
+
+  
+  
+  .header-sign-up{
+
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: underline;
+    padding-bottom: 35px;
+  }
+  .header .mini-logo{
+    position: relative;
+    z-index: 2;
+    width: 70px;
+    height: 70x;
+    margin: 20px 20px;
+  }
+  
+  .header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    z-index: 1;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.76) 15.54%,
+      rgba(0, 0, 0, 0.192) 60.23%,
+      rgba(0, 0, 0, 8e-5) 100%
+    );
+  }
+  
+  /*first-section*/
+
+  .first-section{
+
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    align-items: center;
+    gap: 40px;
+    padding: 30px 40px;
+
+    background: linear-gradient
+    (179.81deg, rgba(4,4,4,0.7) .17%,
+     rgba(4,4,4,0.45) 85.02%,
+      rgba(4,4,4,0.3) 112.52%) !important;
+
+  }
+
+  .get-button-customise{
+
+    width: 180px;
+    background: none;
+    letter-spacing: 1px;
+    color: #fff;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-size: 12px;
+    margin-left: 90px;
+    
+  }
+
+  .get-button-customise:hover{
+    color: #fff;
+    border-color: darkgray;
+  }
+
+  /*Second Section*/
+
+  .second-section{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 40px;
+    text-align: center;
+    justify-content: center;
+
+  }
+  .second-section .cover-images{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+
+  }
+
+  .second-section .cover-images > div {
+    height: 460px;
+    width: 300px;
+    position: relative;
+
+  }
+
+  .second-section .cover-gradient{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(156.82deg, 
+    rgba(0,0,0,0.6) 4.58%,
+     rgba(0,0,0,0) 69.61%),
+     linear-gradient(24.5deg, 
+     rgba(0,0,0,0.2) 4.71%, 
+    rgba(0,0,0,0) 71.49%);
+  }
+
+  .second-section .img-texts{
+
+    position: absolute;
+    text-align: left;
+    top: 20px;
+    left: 20px;
+
+  }
+
+  .second-section .cover-image-1{
+    background: url(../Hulu/images/cover-image-1.jpeg)
+    no-repeat center center / cover;
+  }
+
+.second-section .cover-image-2{
+    background: url(../Hulu/images/cover-image-2.jpeg)
+    no-repeat center center / cover;
+}
+.second-section .cover-image-3{
+    background: url(../Hulu/images/cover-image-3.jpeg)
+    no-repeat center center / cover;
+}
+
+.second-section .cover-image-4{
+    background: url(../Hulu/images/cover-image-4.jpeg)
+    no-repeat center center / cover;
+}
+.last-left-line{
+  font-weight: 100;
+  font-size: 10px;
+  margin-top: 465px;
+  color: #a2a2a2;
+  text-align: left;
+
+}
+
+.third-section{
+  padding-top: 253px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+
+}
+
+.live-tv-detail-texts{
+
+  width: 688px;
+  height: auto;
+  font-family: 'Graphik Web', 'Graphik', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  margin: 10px 300px;
+  line-height: 28px;
+
+}
+
+.regional-text{
+  width: 688px;
+  font-weight: 100;
+  font-size: 10px;
+  color: #a2a2a2;
+  padding-bottom: 10px;
+}
+
+.View-channel-link{
+
+  text-decoration: underline;
+  padding-bottom: 200px;
+}
+
+.basketball{
+  background: url(../Hulu/images/live-sports.jpg) no-repeat center center / cover;
+  height: 800px;
+  position: relative;
+  
+}
+
+.basketball-content{
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  max-width: 510px;
+  
+}
+
+.basketball-section-logos{
+
+  margin-top: 40px;
+  display: flex;
+  width: 300px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.basketball-section-logos > div {
+
+  background: url(images/asset\ 12.png) no-repeat center center / cover ;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.basketball-section-logos img{
+
+  width: 40px;
+
+}
+
+/*footer*/
+
+.footer
+{
+  background: #e8eaed;
+  color: #586174;
+}
+ 
+.footer a{
+
+  color: #586174;
+}
+.footer-container{
+  font-size: 12px;
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px;
+
+}
+.footer-lists{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.footer-lists li{
+
+  padding: 5px 0;
+}
+
+.footer-lists .list-heads{
+
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 5px;
+}
+
+.divider{
+
+  width: 100%;
+  height: 3px;
+  border-top: 1px #ccc solid;
+  margin : 30px;
+}
+
+.social-media-icons img{
+
+  width: 25px;
+  height: 25px;
+  margin-right: 25px;
+}
+
+.model{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+.model-box{
+
+  margin: 10% auto;
+  width: 400px;
+  background: #fff;
+  color: #333;
+  position: relative;
+}
+.model-body{
+   
+  padding: 50px;
+
+}
+
+.model-body h3{
+  font-weight: bold;
+}
+
+.btn-dark{
+  background: #000;
+  color: #fff;
+
+}
+.model-body .buttons{
+  width: 100%;
+  margin-top: 30px;
+
+}
+
+.model .close{
+  
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
+  top: 20px;
+  right: 20px;
+  position: absolute;
+
+}
+
+.model .model-footer{
+  background: gainsboro;
+  color: #333;
+  padding: 20px 0;
+  border-top: #fff 1px solid;
+
+} 
+.model .model-footer a{
+  color: rgb(75, 75, 224);
+}
+
+.form-control{
+
+  margin: 20px 0;
+
+}
+
+.form-control label{
+  display: block;
+}
+
+.form-control input{
+  width : 100%;
+  height: 40px;
+  border: 2px #ccc solid ;
+  border-radius: 2px;
+  padding: 5px ;
+}
+
+.fourth-section{
+  font-size: 11px;
+  padding: 0px 225px;
+  position: relative;
+  display:  flex;
+  width: 100%;
+  background: #e8eaed;
+  color: #586174;
+}
+.fourth-section> div{
+
+  padding: 30px 20px;
+}
+
+.plans-section{
+  
+  padding: 40px 220px;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+
+}
+
+.texts-before-plans{
+ 
+  padding-bottom: 30px;
+  text-align: center;
+
+}
+
+.no-hidden-text{
+
+  font-size: 19px;
+
+}
+.swithc-plans-text{
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.plan-names{
+ 
+  padding: 50px;
+ 
+  width: 100%;
+  align-content: center;
+  text-align: center;
+}
+
+.plans-divider{
+  
+
+  width: 95%;
+  height: 3px;
+  border-top: 1px #717375 solid;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.most-popular{
+  text-align: center;
+  font-size: 9px;
+  max-width: 130px;
+  height: 32px;
+  background: #1CE783;
+  color: #000;
+  margin-left: 49%;
+  border-radius: 15px;
+}
+.most-popular-text{
+  padding: 9px;
+}
+
+.plan-names-grid{
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  gap: 20px;
+}
+
+.first-grid{
+ padding-top: 27px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 3fr;
+
+}
+
+.first-grid-sub-1{
+ 
+  align-content: center;
+  text-align: center;
+  padding: 10px;
+
+}
+.base-plans-text{
+
+  font-size: 13px;
+  font-weight: bold;
+}
+.hulu-logo-names{
+  width: 37px;
+  height: 10px;
+  margin-left: 38px;
+  margin-top: 14px;
+
+}
+
+.first-grid-sub-3{
+  padding: 10px;
+}
+.trial-text{
+  color: #939aa0;
+}
+
+.plan-names-grid-btn{
+  background: #fff;
+  color: #000;
+  width: 100%;
+}
+
+.plan-names-grid button:hover{
+  background: #ccc;
+}
+
+.plan-text-grid{
+  
+  padding: 5px 0;
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+
+}
+
+.plan-text-grid-font{
+  font-size: 14px;
+  font-weight: 100;
+
+}
+
+.second-grid{
+  text-align: center;
+}
+
+.third-grid{
+  text-align: center;
+}
+
+.img-size{
+  width: 20px;
+  height: 12px;
+  margin-left: 140px;
+}
+.dash-width{
+  width: 10px;
+}
+
+.plan-text-grid-font-last{
+  font-size: 10px;
+}
+
+
+
+
+/* toggle button */
+.switch {
+  padding-top: 10px;
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #848383;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color:#5f6367;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:  #1CE783;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #939aa0;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+.switch-padding{
+  margin-top: 20px;
+}
+
+
